@@ -13,20 +13,15 @@ public class ArrayUtils {
 	}
 	
 	public static String stringifyArray(int[] array) {
-		if(array.length == 0) { //in case of the array is empty
+		//Check if the array is empty, return ""
+		if(array.length == 0) { 
 			return "";
 		}
+		// We are assigning array[0] to "a" not to have "," at the beginning of the string
 		String a = array[0] + "";
-		// as we start from 1, we will not have array[0], so, in String, 
-		//we should put array[0], we did it, as we did not want to have String a ="" after "" "," ]
 		for (int i = 1; i < array.length; i++ ) {
 			a = a + "," + array[i];
 		}
 		return a;
 	}
 }
-
-
-
-	 
-	
