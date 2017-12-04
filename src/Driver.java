@@ -10,6 +10,11 @@ public class Driver {
 		Puppy p1 = new Puppy("Joey");
 		Puppy p2 = new Puppy("Chandler");
 		Puppy p3 = new Puppy("Ross");
+		
+		System.out.println(p1.getName());
+		System.out.println(p2.getName());
+		System.out.println(p3.getName());
+		
 		System.out.println(Puppy.numberOfPuppies);	
 		
 		int[] array = new int[] { 9, 20, 3, 44, 88, 300}; 
